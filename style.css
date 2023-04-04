@@ -621,7 +621,7 @@ select {
     margin: 1rem 0;
   }
 }
-@media (max-width: 485px) {
+@media (max-width: 622px) {
   .menu ul {
     display: none;
   }
