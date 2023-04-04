@@ -18,6 +18,9 @@ h2 {
   font-weight: 600;
   font-size: 2rem;
 }
+span {
+  font-size: 1rem;
+}
 hr {
   border-top: 1px solid #d3d3d3;
 }
