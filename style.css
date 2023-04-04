@@ -225,6 +225,7 @@ li span {
 .features-header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .features-list {
   justify-items: center;
@@ -322,6 +323,7 @@ li span {
 .about-header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .about-content {
   display: flex;
@@ -353,6 +355,7 @@ li span {
 .team-header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .team-card {
   display: flex;
@@ -440,6 +443,7 @@ blockquote {
 .appointment-header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .appointment-content {
   display: flex;
@@ -726,10 +730,10 @@ select {
     padding: 0;
   }
   h2 {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
   h2 span {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
   .service-content div {
     padding: 1rem 0;
