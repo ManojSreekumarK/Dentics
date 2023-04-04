@@ -161,7 +161,7 @@ h2 span {
   justify-content: center;
   aspect-ratio: 1/1;
 }
-.holder-steps svg {
+.holder-steps img {
   width: 20%;
   color: #52525b;
 }
@@ -215,7 +215,7 @@ h2 span {
   display: flex;
   align-items: center;
 }
-li svg {
+li img {
   width: 1rem;
 }
 li span {
@@ -676,7 +676,7 @@ select {
   .service-content ul {
     width: 100%;
   }
-  .list li svg {
+  .list li img {
     width: 10%;
     height: 10%;
     aspect-ratio: 1/1;
