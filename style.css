@@ -665,6 +665,9 @@ select {
   .features-list hr {
     display: none;
   }
+  .features-list div p {
+    font-size: 1.2rem;
+  }
   .service-content ul {
     width: 100%;
   }
