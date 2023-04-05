@@ -18,9 +18,7 @@ h2 {
   font-weight: 600;
   font-size: 2rem;
 }
-span {
-  font-size: 1rem;
-}
+
 hr {
   border-top: 1px solid #d3d3d3;
 }
@@ -580,6 +578,9 @@ select {
   padding: 1rem;
   background-color: #216583;
   color: #fff;
+}
+.copyright span {
+  font-size: 0.7rem;
 }
 
 /* Media Queries */
