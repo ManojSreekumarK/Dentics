@@ -58,6 +58,7 @@ a button {
   border-radius: 5px;
   font-weight: 500;
   color: #fff;
+  cursor: pointer;
 }
 a {
   text-decoration: none;
@@ -79,6 +80,23 @@ a:hover {
 header hr {
   margin: 0.6rem 4rem 0 4rem;
 }
+.toggler {
+  background-color: #e9e7e7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+  margin: 0 4rem;
+  display: none;
+}
+.toggler ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  row-gap: 1rem;
+  align-items: center;
+}
+
 .hero-section {
   display: flex;
   gap: 1rem;
@@ -175,6 +193,7 @@ h2 span {
   background-color: #f5f5f5;
   padding: 0 0 4rem 4rem;
   border-bottom-right-radius: 50px;
+  overflow: hidden;
 }
 .service-header div {
   padding: 5rem 0 1rem 0;
@@ -538,7 +557,7 @@ select {
 .footer-top {
   padding: 4rem;
 }
-.footer-top div {
+.footer-top > div {
   width: 20%;
 }
 
@@ -584,15 +603,41 @@ select {
 }
 
 /* Media Queries */
-@media (min-width: 1600px) {
-  html {
-    font-size: 25px;
+@media (min-width: 622px) {
+  .toggler {
+    display: none !important;
+  }
+  :root {
+    font-size: 8px !important;
   }
 }
-@media (max-width: 800px) {
-  html {
-    font-size: 10px;
+@media (min-width: 751px) {
+  :root {
+    font-size: 10px !important;
   }
+}
+@media (min-width: 880px) {
+  :root {
+    font-size: 12px !important;
+  }
+}
+@media (min-width: 1077px) {
+  :root {
+    font-size: 15px !important;
+  }
+}
+@media (min-width: 1383px) {
+  :root {
+    font-size: 19px !important;
+  }
+}
+@media (min-width: 1574px) {
+  :root {
+    font-size: 22px !important;
+  }
+}
+
+@media (max-width: 880px) {
   header {
     display: flex;
     flex-direction: column;
@@ -617,13 +662,18 @@ select {
     margin: 1rem 0;
   }
 }
+
 @media (max-width: 622px) {
+  html {
+    font-size: 10px !important;
+  }
   .menu ul {
     display: none;
   }
   .hamburger {
     display: flex;
   }
+
   .holder {
     flex-direction: column;
     row-gap: 2rem;
