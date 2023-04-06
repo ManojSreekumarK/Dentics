@@ -507,6 +507,20 @@
           <span>&copy; 2001-2023, All Rights Reserved</span>
         </div>
       </footer>
+      <!-- Pop-up screen -->
+      <div id="popup" class="popup">
+        <p>Connect with me on:</p>
+        <a href="https://www.linkedin.com/" target="_blank"
+          ><img
+            src="https://gist.githack.com/ManojSreekumarK/609aaf0aa73518a97547f3f0251a0ed0/raw/dca6f5a047c2eb87c0904dde87fee97233613af8/in.svg"
+          />
+        </a>
+        <a href="https://github.com/" target="_blank"
+          ><img
+            src="https://gist.githack.com/ManojSreekumarK/e72dd29218328928f1c2ed693d8381e6/raw/36bf440c693d342f1d5a416d628ee6280c98f2c1/git.svg"
+        /></a>
+        <button id="close-btn">Close</button>
+      </div>
     </container>
     <script>
       const hamburger = document.getElementById("hamburger");
@@ -522,6 +536,22 @@
         console.log("hey");
         check = !check;
         toggle.style.display = check ? "flex" : "none";
+      });
+
+      // Get the pop-up screen and close button
+      const popup = document.getElementById("popup");
+      const closeBtn = document.getElementById("close-btn");
+
+      // Show the pop-up screen when user reaches bottom of page
+      window.addEventListener("scroll", () => {
+        if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+          popup.style.display = "block";
+        }
+      });
+
+      // Hide the pop-up screen when user clicks close button
+      closeBtn.addEventListener("click", () => {
+        popup.style.display = "none";
       });
     </script>
   </body>

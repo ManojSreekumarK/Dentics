@@ -601,6 +601,41 @@ select {
 .copyright span {
   font-size: 0.7rem;
 }
+/* Styling for pop-up screen */
+.popup {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  height: 30%;
+  padding: 10px;
+  transform: translate(50%, -50%);
+  background-color: #333; /* replace with desired color code */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* adjust values to achieve desired effect */
+  border-radius: 5px; /* adjust value to achieve desired effect */
+  display: none;
+  z-index: 9999;
+  color: #fff;
+  text-align: center;
+}
+
+.popup p {
+  margin: 0 0 5px 0;
+}
+
+.popup a {
+  display: inline-block;
+  margin: 8px 5px;
+}
+
+.popup button {
+  display: block;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  background-color: #39abdb;
+  margin: 5px auto 0 auto;
+}
 
 /* Media Queries */
 @media (min-width: 622px) {
