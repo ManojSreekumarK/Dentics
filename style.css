@@ -607,8 +607,7 @@ select {
   bottom: 0;
   left: 0;
   width: 50%;
-  height: 30%;
-  padding: 10px;
+  padding: 25px;
   transform: translate(50%, -50%);
   background-color: #333; /* replace with desired color code */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* adjust values to achieve desired effect */
